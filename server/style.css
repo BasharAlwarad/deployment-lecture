@@ -1,0 +1,59 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  background: lightpink;
+}
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 25%;
+}
+section form {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+input,
+button {
+  margin: 0.5rem;
+  min-width: 10rem;
+  min-height: 2.5rem;
+  border-radius: 50%;
+}
+button:nth-child(1) {
+  background: lightgreen;
+}
+button:nth-child(2) {
+  background: rgb(135, 208, 232);
+}
+button:nth-child(3) {
+  background: rgb(228, 159, 159);
+}
+button:active {
+  scale: 0.9;
+}
+input {
+  max-width: 100%;
+}
+section:last-child {
+  min-height: 4rem;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  font-size: larger;
+}

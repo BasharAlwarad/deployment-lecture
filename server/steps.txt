@@ -1,0 +1,43 @@
+expectations Javascript HTML CSS Node.js React express mangoDB mongoose SQL.
+
+introduce library serve
+explain what is a server
+npm i serve -g
+
+display how to import data directly into JS
+import data from './data.json' assert { type: 'json' };
+
+
+IP address for mac: ifconfig
+IP address for windows: ipconfig
+Ip address/5000/data
+Ip address/3000
+
+
+how to use "fs"
+
+RESTful: representational state transform.
+restful is not a technology or a library. it's a architectural pattern. it's a representation of the database and not the database it self.
+
+create a node backend server
+use node --watch
+previously we used nodemon
+
+create data.json base and import it
+import data from './data.json' assert { type: 'json' };
+
+with import we don't have full CRUD functions over the data.
+
+npm i fs
+app.get('/', (req, res) => {
+  fs.readFile('./data.json', 'utf-8', (error, data) => {
+    if (error) {
+      res.status(500).json({ error: error });
+    } else {
+      res.status(200).json(JSON.parse(data));
+    }
+  });
+});
+
+
+then use fetch to import the data
